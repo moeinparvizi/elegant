@@ -1,0 +1,10 @@
+<svg class="svg-shape" viewBox="0 0 300 322" xmlns="http://www.w3.org/2000/svg">
+<title>Colorful Shapes</title>
+<defs>
+<linearGradient id="gradient-3" gradientTransform="rotate(90)">
+<stop offset="5%" stop-color="rgba(233,244,255,0)"></stop>
+<stop offset="95%" stop-color="rgba(233,244,255,1)"></stop>
+</linearGradient>
+</defs>
+<path fill="url(#gradient-3)" d="M300,196.58v-71.16c0-31.57-16.84-60.75-44.19-76.53l-61.63-35.58c-27.34-15.79-61.03-15.79-88.37,0 L44.19,48.89C16.84,64.67,0,93.85,0,125.42v71.16c0,31.57,16.84,60.75,44.19,76.53l61.63,35.58c27.34,15.79,61.03,15.79,88.37,0 l61.63-35.58C283.16,257.33,300,228.15,300,196.58z"></path>
+</svg>
