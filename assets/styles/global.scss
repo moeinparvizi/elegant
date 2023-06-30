@@ -1,0 +1,169 @@
+// colors
+$bwhite : #E1E1E1;
+$white : #fff;
+$black : #000;
+$sblack : #20292F;
+
+$gray : #808080;
+$hgray : #414A56;
+$mgray : #576373;
+$sgray : #6D7C90;
+
+$hpink : #F92C8B;
+$mpink : #FF4A9E;
+$epink : #FF4AC2;
+
+$epurple : #B142EC;
+$mpurple : #8F42EC;
+$hpurple : #521D91;
+
+$hblue : #0000EE;
+$mblue : #2655EB;
+$sblue : #379EFF;
+
+$hgreen : #436855;
+$mgreen : #34DD65;
+$sgreen : #34DDA9;
+
+$sorange : #FFAD00;
+$morange : #FF7B2B;
+$gorange : #FF4C00;
+
+$red : #FF1900;
+
+$brown : #935631;
+
+// repeat
+:root {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $white;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+
+    a,
+    a:visited,
+    a::selection {
+        color: black;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+// mixin
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin hr-gradient($start, $end) {
+    width: 100%;
+    background: linear-gradient(90deg, $start 0%, $end 80%);
+    height: 1px;
+    border: none;
+}
+
+@mixin divi-products-mega($color) {
+    >a {
+        display: flex;
+
+        div:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            opacity: .8;
+            box-shadow: 0px 0px 10px $color;
+            transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            >i {
+                color: $white;
+                font-size: 2rem;
+            }
+        }
+
+        >div:last-child {
+            position: relative;
+
+            >h6 {
+                text-align: left;
+                font-size: 2rem;
+                margin: 0;
+                color: $color;
+                padding: 5px;
+                text-transform: uppercase;
+            }
+
+            >p {
+                margin: 0;
+                padding: 5px;
+            }
+
+            >i {
+                position: absolute;
+                top: 17%;
+                left: 90%;
+                opacity: 0;
+                font-weight: bold;
+                transition: all .4s linear;
+            }
+        }
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 20px $color;
+        border-radius: 20px;
+
+        >a {
+            >div:first-child {
+                box-shadow: 0px 0px 20px $color;
+                opacity: 1;
+                scale: 1.1;
+            }
+
+            >div:last-child {
+                >i {
+                    opacity: 1;
+                }
+
+                >h6 {
+                    text-shadow: 0px 0px 20px $color;
+                }
+            }
+        }
+    }
+}
+
+@mixin hover-li {
+    >div {
+        display: flex;
+        position: absolute;
+        top: calc(0px + 190px);
+        background-color: $white;
+        // opacity: 0;
+        // visibility: hidden;
+        border-radius: 50px;
+        box-shadow: 0px 0px 70px $hblue;
+        transition: all .4s ease-in-out;
+    }
+    &:hover {
+        >div {
+            opacity: 1;
+            visibility: visible;
+            top: calc(0px + 90px);
+        }
+    }
+
+}
