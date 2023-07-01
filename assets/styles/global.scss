@@ -11,9 +11,9 @@ $sgray : #6D7C90;
 
 $hpink : #F92C8B;
 $mpink : #FF4A9E;
-$epink : #FF4AC2;
+$spink : #FF4AC2;
 
-$epurple : #B142EC;
+$spurple : #B142EC;
 $mpurple : #8F42EC;
 $hpurple : #521D91;
 
@@ -27,7 +27,7 @@ $sgreen : #34DDA9;
 
 $sorange : #FFAD00;
 $morange : #FF7B2B;
-$gorange : #FF4C00;
+$horange : #FF4C00;
 
 $red : #FF1900;
 
@@ -152,12 +152,13 @@ body {
         position: absolute;
         top: calc(0px + 190px);
         background-color: $white;
-        // opacity: 0;
-        // visibility: hidden;
+        opacity: 0;
+        visibility: hidden;
         border-radius: 50px;
         box-shadow: 0px 0px 70px $hblue;
         transition: all .4s ease-in-out;
     }
+
     &:hover {
         >div {
             opacity: 1;
@@ -166,4 +167,18 @@ body {
         }
     }
 
+}
+
+@mixin divi-for-li($color1, $color2) {
+    background-color: $color1;
+    box-shadow: 0 0 20px $color1;
+    transition: all .4s linear;
+
+    >h6 {
+        color: $color2;
+        text-shadow: 0 0 10px $white;
+    }
+    &:hover{
+        scale: 1.5;
+    }
 }
