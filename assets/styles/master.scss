@@ -487,4 +487,69 @@ header {
             }
         }
     }
+
+    >div {
+        display: flex;
+        justify-content: center;
+        color: $white;
+        font-weight: bold;
+
+        >div:first-child {
+            width: 80%;
+
+            >h1 {
+                width: 40%;
+                font-size: 10rem;
+                margin: 5px 0;
+            }
+
+            >div {
+                font-size: 2rem;
+
+                >div {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 10%;
+                        padding: 0 10px;
+                    }
+                }
+
+                >p {
+                    font-size: 3rem;
+
+                    &:nth-of-type(1) {
+                        width: 50%;
+                    }
+
+                    &:nth-of-type(2) {
+                        font-size: 2rem;
+                        font-weight: lighter;
+                    }
+                }
+
+                >a {
+                    background-color: $spurple;
+                    padding: 10px;
+                    border-radius: 20px;
+                    color: $white;
+                    margin: 20px;
+                    text-transform: uppercase;
+                    transition: all .3s;
+
+                    &:hover {
+                        transform: translate(0px, -8px);
+                        background-color: $mpurple;
+                    }
+                }
+            }
+        }
+        >div:last-child{
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            width: 50%;
+        }
+    }
 }

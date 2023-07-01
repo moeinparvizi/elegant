@@ -151,6 +151,7 @@ body {
         display: flex;
         position: absolute;
         top: calc(0px + 190px);
+        z-index: 2;
         background-color: $white;
         opacity: 0;
         visibility: hidden;
