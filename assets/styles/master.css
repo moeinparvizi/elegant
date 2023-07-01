@@ -20,10 +20,6 @@ body ul {
   list-style-type: none;
 }
 
-body {
-  background-color: #808080;
-}
-
 header {
   height: 100vh;
   background-image: url(../media/images/landing-hero-background.jpg);
@@ -43,7 +39,6 @@ header .megamenu > div {
   align-content: center;
   width: 80%;
   height: 90px;
-  border: 1px solid red;
 }
 header .megamenu > div > figure {
   display: flex;
@@ -986,6 +981,7 @@ header .megamenu > div > ul > li:nth-of-type(4) > div > ul > li > a {
 }
 header .megamenu > div > ul > li:nth-of-type(4) > div > ul > li > a > i:first-child,
 header .megamenu > div > ul > li:nth-of-type(4) > div > ul > li > a p {
+  margin: 0;
   color: #379EFF;
   font-weight: bold;
   font-size: 2rem;
@@ -1040,7 +1036,6 @@ header .megamenu > div > ul > li:nth-of-type(5):hover > div {
 header .megamenu > div > ul > li:nth-of-type(5) > div {
   background-color: #fff;
   border-radius: 20px;
-  border: 1px solid red;
 }
 header .megamenu > div > ul > li:nth-of-type(5) > div > form {
   display: flex;

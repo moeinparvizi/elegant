@@ -2,9 +2,9 @@
 
 // start test --------------------
 
-body {
-    background-color: $gray;
-}
+// body {
+//     background-color: $gray;
+// }
 
 // end test ----------------------
 
@@ -25,7 +25,6 @@ header {
             align-content: center;
             width: 80%;
             height: 90px;
-            border: 1px solid red;
 
             >figure {
                 @include flex-center;
@@ -246,9 +245,6 @@ header {
                         @include hover-li;
 
                         >div {
-                            // visibility: visible;
-                            // opacity: 1;
-
                             hr {
                                 @include hr-gradient($mgray, $bwhite);
                             }
@@ -376,6 +372,7 @@ header {
 
                                         >i:first-child,
                                         p {
+                                            margin: 0;
                                             color: $sblue;
                                             font-weight: bold;
                                             font-size: 2rem;
@@ -432,7 +429,6 @@ header {
                         >div {
                             background-color: $white;
                             border-radius: 20px;
-                            border: 1px solid red;
 
                             >form {
                                 display: flex;
@@ -454,27 +450,32 @@ header {
                                     display: flex;
                                     padding: 20px 0;
                                     justify-content: start;
+
                                     >label {
                                         text-transform: capitalize;
                                         font-size: 1.7rem;
                                     }
                                 }
-                                >a{
+
+                                >a {
                                     background-color: $sblue;
                                     padding: 10px;
                                     color: $white;
                                     font-size: 1.8rem;
                                     transition: all .4s linear;
                                     border-radius: 10px;
-                                    &:hover{
+
+                                    &:hover {
                                         background-color: $hblue;
                                         scale: 1.1;
                                     }
                                 }
-                                >p{
-                                    >a{
+
+                                >p {
+                                    >a {
                                         color: $mblue;
-                                        &:visited{
+
+                                        &:visited {
                                             color: $sblue;
                                         }
                                     }
