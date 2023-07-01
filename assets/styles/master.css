@@ -1129,7 +1129,7 @@ header > div > div:first-child > div > a {
   transition: all 0.3s;
 }
 header > div > div:first-child > div > a:hover {
-  transform: translate(0px, -8px);
+  transform: translate(0px, 12%);
   background-color: #8F42EC;
 }
 header > div > div:last-child {
@@ -1137,6 +1137,67 @@ header > div > div:last-child {
   top: 100px;
   left: 50%;
   width: 50%;
+}
+
+.divi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  margin: 0 auto;
+  padding: 50px;
+}
+.divi > * {
+  display: flex;
+  justify-content: center;
+}
+.divi > h2 {
+  font-size: 9rem;
+  font-weight: bold;
+  color: #0000EE;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.divi > div {
+  display: flex;
+  align-items: center;
+}
+.divi > div > img {
+  width: 10%;
+  margin-right: 10px;
+}
+.divi > div > a {
+  font-size: 2rem;
+  color: #FF1900;
+  font-weight: bold;
+}
+.divi > div > a:hover {
+  color: #FFAD00;
+}
+.divi > p:nth-of-type(1) {
+  font-size: 3rem;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+.divi > p:nth-of-type(2) {
+  color: #414A56;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.divi > a {
+  background-color: #0000EE;
+  color: #fff !important;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 25%;
+  border-radius: 40px;
+  margin: 0 auto;
+  transition: all 0.4s linear;
+}
+.divi > a:hover {
+  background-color: #379EFF;
 }
 
 /*# sourceMappingURL=master.css.map */
