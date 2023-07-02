@@ -1129,7 +1129,9 @@ header > div > div:first-child > div > a {
   transition: all 0.3s;
 }
 header > div > div:first-child > div > a:hover {
-  transform: translate(0px, 12%);
+  display: flex;
+  width: 22%;
+  transform: translate(0px, -10px);
   background-color: #8F42EC;
 }
 header > div > div:last-child {
@@ -1194,10 +1196,78 @@ header > div > div:last-child {
   width: 25%;
   border-radius: 40px;
   margin: 0 auto;
-  transition: all 0.4s linear;
+  transition: all 0.2s linear;
 }
 .divi > a:hover {
   background-color: #379EFF;
+  transform: translate(0px, -8px);
+}
+
+.under-divi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.under-divi > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 78.5vh;
+  position: relative;
+  margin-top: 10px;
+}
+.under-divi > div > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  transform: translateX(21.4%);
+  background-color: #379EFF;
+  opacity: 0.5;
+  z-index: 3;
+  border-radius: 20px;
+}
+.under-divi > div > img:nth-of-type(1) {
+  width: 70%;
+  position: absolute;
+  z-index: 2;
+  border-radius: 20px;
+}
+.under-divi > div > i {
+  z-index: 5;
+  display: flex;
+  transform: translate(-20%, -20%);
+  transition: all 0.4s linear;
+  color: #fff;
+  font-size: 12rem;
+}
+.under-divi > div > i::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 4;
+  opacity: 0.5;
+  transform: translate(-8%, -8%);
+  transition: all 0.4s linear;
+}
+.under-divi > div > i:hover {
+  scale: 0.9;
+}
+.under-divi > div > i:hover::after {
+  scale: 1.5;
+}
+.under-divi > div img:nth-of-type(2) {
+  position: absolute;
+  display: flex;
+  transform: translateY(210px);
+  left: 2%;
+  width: 50%;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=master.css.map */
