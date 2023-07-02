@@ -653,7 +653,7 @@ header {
             width: 70%;
             height: 100%;
             transform: translateX(21.4%);
-            background-color: $sblue;
+            background-color: $hblue;
             opacity: .5;
             z-index: 3;
             border-radius: 20px;
@@ -699,10 +699,19 @@ header {
         img:nth-of-type(2) {
             position: absolute;
             display: flex;
-            transform: translateY(210px);
+            transform: translateY(210px) rotate(23deg);
             left: 2%;
-            width: 50%;
+            width: 30%;
             z-index: 1;
+        }
+        span{
+            position: absolute;
+            top: -20%;left: 75%;
+            background-color: $hpink;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            opacity: .7;
         }
     }
 }

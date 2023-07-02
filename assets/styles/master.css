@@ -1224,7 +1224,7 @@ header > div > div:last-child {
   width: 70%;
   height: 100%;
   transform: translateX(21.4%);
-  background-color: #379EFF;
+  background-color: #0000EE;
   opacity: 0.5;
   z-index: 3;
   border-radius: 20px;
@@ -1264,10 +1264,20 @@ header > div > div:last-child {
 .under-divi > div img:nth-of-type(2) {
   position: absolute;
   display: flex;
-  transform: translateY(210px);
+  transform: translateY(210px) rotate(23deg);
   left: 2%;
-  width: 50%;
+  width: 30%;
   z-index: 1;
+}
+.under-divi > div span {
+  position: absolute;
+  top: -20%;
+  left: 75%;
+  background-color: #F92C8B;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=master.css.map */
