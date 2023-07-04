@@ -1130,6 +1130,7 @@ header > div > div:first-child > div > a {
   width: 22%;
   text-align: center;
   display: flex;
+  justify-content: center;
 }
 header > div > div:first-child > div > a:hover {
   transform: translate(0px, -8px);
