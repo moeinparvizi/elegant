@@ -1127,11 +1127,12 @@ header > div > div:first-child > div > a {
   margin: 20px;
   text-transform: uppercase;
   transition: all 0.3s;
+  width: 22%;
+  text-align: center;
+  display: flex;
 }
 header > div > div:first-child > div > a:hover {
-  display: flex;
-  width: 22%;
-  transform: translate(0px, -10px);
+  transform: translate(0px, -8px);
   background-color: #8F42EC;
 }
 header > div > div:last-child {
@@ -1215,7 +1216,6 @@ header > div > div:last-child {
   width: 100%;
   height: 78.5vh;
   position: relative;
-  margin-top: 10px;
 }
 .under-divi > div > div {
   position: absolute;
@@ -1277,7 +1277,84 @@ header > div > div:last-child {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  opacity: 0.6;
+}
+
+.gallery {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+  justify-content: center;
+}
+.gallery > div {
+  display: grid;
+  grid-template-columns: repeat(6, 20%);
+  grid-template-rows: repeat(6, 20%);
+  gap: 50px;
+  padding: 100px;
+}
+.gallery > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.gallery > div > div > img {
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 0 10px #0000EE;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+.gallery > div > div:nth-of-type(1) {
+  grid-area: 1/1/span 1/span 2;
+}
+.gallery > div > div:nth-of-type(2) {
+  grid-area: 2/2/span 2/span 2;
+  position: relative;
+  z-index: 2;
+}
+.gallery > div > div:nth-of-type(3) {
+  grid-area: 2/1/span 1/span 1;
+}
+.gallery > div > div:nth-of-type(4) {
+  grid-area: 1/3/span 2/span 2;
+  position: relative;
+  z-index: 3;
+}
+.gallery > div > div:nth-of-type(5) {
+  grid-area: 3/3/span 1/span 2;
+}
+.gallery > div > div:nth-of-type(6) {
+  position: relative;
+  z-index: 1;
+  grid-area: 3/1/span 2/span 2;
+}
+.gallery > div > div > div {
+  position: absolute;
+  top: 120%;
+  transition: all 0.4s;
+}
+.gallery > div > div:hover {
+  z-index: 99;
+}
+.gallery > div > div:hover > img {
+  scale: 1.1;
+}
+.gallery > div > div:hover > div {
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  font-size: 3rem;
+  background-color: #521D91;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
   opacity: 0.7;
+  width: 60%;
 }
 
 /*# sourceMappingURL=master.css.map */

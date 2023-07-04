@@ -537,11 +537,12 @@ header {
                     margin: 20px;
                     text-transform: uppercase;
                     transition: all .3s;
+                    width: 22%;
+                    text-align: center;
+                    display: flex;
 
                     &:hover {
-                        display: flex;
-                        width: 22%;
-                        transform: translate(0px, -10px);
+                        transform: translate(0px, -8px);
                         background-color: $mpurple;
                     }
                 }
@@ -643,8 +644,6 @@ header {
         width: 100%;
         height: 78.5vh;
         position: relative;
-        margin-top: 10px;
-
 
         >div {
             position: absolute;
@@ -711,7 +710,84 @@ header {
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            opacity: .7;
+            opacity: .6;
+        }
+    }
+}
+
+.gallery{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    justify-content: center;
+    >div{
+        display: grid;
+        grid-template-columns: repeat(6,20%);
+        grid-template-rows: repeat(6,20%);
+        gap: 50px;
+        padding: 100px;
+        >div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            >img{
+                object-fit: cover;
+                width: 90%;
+                height: 90%;
+                box-shadow: 0 0 10px $hblue;
+                border-radius: 20px;
+                transition: all .4s;
+            }
+            &:nth-of-type(1){
+                grid-area: 1 / 1 / span 1 / span 2;
+            }
+            &:nth-of-type(2){
+                grid-area: 2 / 2 / span 2 / span 2;
+                position: relative;
+                z-index: 2;
+            }
+            &:nth-of-type(3){
+                grid-area: 2 / 1 / span 1 / span 1;
+            }
+            &:nth-of-type(4){
+                grid-area: 1 / 3 / span 2 / span 2;
+                position: relative;
+                z-index: 3;
+            }
+            &:nth-of-type(5){
+                grid-area: 3 / 3 / span 1 / span 2;
+            }
+            &:nth-of-type(6){
+                position: relative;
+                z-index: 1;
+                grid-area: 3 / 1 / span 2 / span 2;
+            }
+            >div{
+                position: absolute;
+                top: 120%;
+                transition: all .4s;
+            }
+            &:hover{
+                z-index: 99;
+                >img{
+                    scale: 1.1;
+                }
+                >div{
+                    top: 20px;
+                    left: 20px;
+                    z-index: 100;
+                    font-size: 3rem;
+                    background-color: $hpurple;
+                    border-radius: 20px;
+                    color: white;
+                    font-weight: bold;
+                    padding: 20px;
+                    opacity: .7;
+                    width: 60%;
+                }
+            }
         }
     }
 }
