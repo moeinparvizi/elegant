@@ -7,7 +7,7 @@
 <!--
 moein parvizi
 -->
-[![Contributors][contributors-shield]][contributors-url]
+![Contributors][contributors-shield]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -31,7 +31,7 @@ moein parvizi
     <a href="https://github.com/moeinparvizi/elegant"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/moeinparvizi/elegant">View Demo</a>
+    <a href="https://moeinparvizi.github.io/elegant/">View Demo</a>
     ·
     <a href="https://github.com/moeinparvizi/elegant/issues">Report Bug</a>
     ·
@@ -67,7 +67,9 @@ moein parvizi
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![1](https://github.com/moeinparvizi/elegant/assets/38692466/c695a35d-54f4-49d8-8841-fad8972b0562)
+![2](https://github.com/moeinparvizi/elegant/assets/38692466/3f8e46f2-b78b-4198-8583-8d8954c3681a)
+![3](https://github.com/moeinparvizi/elegant/assets/38692466/71d4e02a-4fcb-4075-a1fa-c544250d4249)
 
 hi my name is moein and welcome to my project page and let me talk about this project.
 a static website with html and css..
